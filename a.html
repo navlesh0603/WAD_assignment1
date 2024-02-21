@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Admin Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      position: relative; /* Ensure relative positioning for absolute positioning of the logout button */
+    }
+    .wrapper {
+      display: flex;
+    }
+    .sidebar {
+      background-color: #000000;
+      color: #fff;
+      min-width: 150px;
+      height: 100vh;
+      padding-top: 20px;
+      position: fixed; /* Fixed positioning for sidebar */
+    }
+    .content {
+      flex: 1;
+      padding: 20px;
+      margin-left: 250px; /* Adjust content margin to account for sidebar width */
+    }
+    .sidebar .nav-link {
+      padding: 10px;
+    }
+    .sidebar .nav-link:hover {
+      background-color: #495057;
+    }
+    /* Positioning for the logout button */
+    .logout-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#
+        ">Exams</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Results</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Settings</a>
+      </li>
+    </ul>
+    <button class="btn btn-primary mt-4 ml-3" >Create Exam</button>
+  </div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <!-- Logout button -->
+    <button class="btn btn-danger logout-btn">Logout</button>
+    <h2 class="text-center">Dashboard</h2>
+
+    <h2>Exam Admin Dashboard</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Total Exams</h5>
+            <p class="card-text">5</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Total Students</h5>
+            <p class="card-text">150</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Average Score</h5>
+            <p class="card-text">80%</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Passing Rate</h5>
+            <p class="card-text">90%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+Bootstrap JS and dependencies
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
